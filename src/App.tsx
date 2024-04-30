@@ -5,7 +5,9 @@ function App() {
   return (
     <>
       <GlobalCss />
-      <Header />
+      <div className="container">
+        <Header />
+      </div>
     </>
   )
 }

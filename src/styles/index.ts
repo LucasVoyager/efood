@@ -7,4 +7,10 @@ export const GlobalCss = createGlobalStyle`
     box-sizing: border-box;
     font-family: Roboto,san-serif;
   }
+
+  .container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+  }
 `
