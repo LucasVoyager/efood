@@ -1,3 +1,4 @@
+import Footer from './components/Footer'
 import Header from './components/Header'
 import { GlobalCss } from './styles'
 
@@ -7,6 +8,7 @@ function App() {
       <GlobalCss />
       <div className="container">
         <Header />
+        <Footer />
       </div>
     </>
   )

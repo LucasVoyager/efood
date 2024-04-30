@@ -7,8 +7,7 @@ const Header = () => {
     <HeaderContainer>
       <img src={logo} alt="efood logo" />
       <TitleHeader>
-        Viva experiências gastronômicas <br />
-        no conforto da sua casa
+        Viva experiências gastronômicas no conforto da sua casa
       </TitleHeader>
     </HeaderContainer>
   )
