@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${Colors.footerColor};
+  background-color: ${Colors.secondaryColor};
 `
 export const Links = styled.ul`
   display: flex;

@@ -4,7 +4,7 @@ import { Colors } from '../../styles/variables'
 export const CardContainer = styled.div`
   width: 480px;
   max-width: 100%;
-  border: Mixed solid ${Colors.primaryColor};
+  border: 2px solid ${Colors.primaryColor};
   color: ${Colors.primaryColor};
 `
 export const TitleStar = styled.div`
