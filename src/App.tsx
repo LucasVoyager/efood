@@ -1,18 +1,20 @@
+import { BrowserRouter } from 'react-router-dom'
+
 import Footer from './components/Footer'
 import Header from './components/Header'
-import ListCard from './containers/CardList'
 import { GlobalCss } from './styles'
+import RoutesCP from './routes'
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <GlobalCss />
       <div className="container">
         <Header />
-        <ListCard />
-        <Footer />
+        <RoutesCP />
       </div>
-    </>
+      <Footer />
+    </BrowserRouter>
   )
 }
 

@@ -1,3 +1,11 @@
-const Home = () => <div>Sou o home</div>
+import ListCard from '../../containers/CardList'
+
+const Home = () => {
+  return (
+    <>
+      <ListCard />
+    </>
+  )
+}
 
 export default Home
