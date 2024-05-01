@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 import { Colors } from '../../styles/variables'
 
+import vector from '../../assets/images/Vector.png'
+
 export const HeaderContainer = styled.header`
-  background: ${Colors.headerColor};
+  background-image: url(${vector});
   display: flex;
   flex-direction: column;
   column-gap: 240px;

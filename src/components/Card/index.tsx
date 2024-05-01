@@ -1,27 +1,46 @@
-import { CardContainer, Description, TitleStar } from './styles'
+import {
+  CardContainer,
+  ContentCard,
+  Description,
+  Infos,
+  Rank,
+  TitleStar
+} from './styles'
 
 import star from '../../assets/images/estrela.svg'
+import Button from '../Button'
+import Tag from '../Tag'
 
 type Props = {
   image: string
   title: string
   rank: number
   description: string
+  infos: string[]
 }
 
-const Card = ({ description, image, rank, title }: Props) => {
+const Card = ({ description, image, rank, title, infos }: Props) => {
   return (
     <CardContainer>
-      <button>Destaque da semana</button>
-      <button>categoria da comida</button>
+      <Infos>
+        {infos.map((info) => (
+          <Tag key={info}>{info}</Tag>
+        ))}
+      </Infos>
       <img src={image} alt="" />
-      <TitleStar>
-        <h2>{title}</h2>
-        <span>{rank}</span>
-        <img src={star} alt="estrela" />
-      </TitleStar>
-      <Description>{description}</Description>
-      <button>saiba mais</button>
+      <ContentCard>
+        <TitleStar>
+          <h2>{title}</h2>
+          <Rank>
+            <span>{rank}</span>
+            <img src={star} alt="estrela" />
+          </Rank>
+        </TitleStar>
+        <Description>{description}</Description>
+        <Button type="button" title="saiba mais">
+          saiba mais
+        </Button>
+      </ContentCard>
     </CardContainer>
   )
 }

@@ -7,6 +7,10 @@ export const FooterContainer = styled.footer`
   flex-direction: column;
   align-items: center;
   background-color: ${Colors.secondaryColor};
+
+  img {
+    margin-top: 40px;
+  }
 `
 export const Links = styled.ul`
   display: flex;
