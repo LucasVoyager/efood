@@ -1,17 +1,10 @@
-import {
-  CardContainer,
-  ContentCard,
-  Description,
-  Infos,
-  Rank,
-  TitleStar
-} from './styles'
+import { CardContainer, ContentCard, Infos, Rank, TitleStar } from './styles'
+import { ButtonLink, Description } from '../../styles'
 
 import star from '../../assets/images/estrela.svg'
-import Button from '../Button'
 import Tag from '../Tag'
 
-type Props = {
+export type Props = {
   image: string
   title: string
   rank: number
@@ -37,9 +30,7 @@ const Card = ({ description, image, rank, title, infos }: Props) => {
           </Rank>
         </TitleStar>
         <Description>{description}</Description>
-        <Button type="link" to="/perfil" title="saiba mais">
-          saiba mais
-        </Button>
+        <ButtonLink to="/perfil">saiba mais</ButtonLink>
       </ContentCard>
     </CardContainer>
   )

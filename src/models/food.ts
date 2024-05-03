@@ -1,25 +1,32 @@
 class Food {
   description: string
   image: string
-  rank: number
   title: string
-  infos: string[]
   id: number
 
-  constructor(
-    description: string,
-    image: string,
-    rank: number,
-    title: string,
-    infos: string[],
-    id: number
-  ) {
+  constructor(description: string, image: string, title: string, id: number) {
     this.description = description
     this.image = image
-    this.rank = rank
     this.title = title
-    this.infos = infos
     this.id = id
+  }
+}
+
+export class FoodHome extends Food {
+  infos: string[]
+  rank: number
+
+  constructor(
+    infos: string[],
+    rank: number,
+    description: string,
+    image: string,
+    title: string,
+    id: number
+  ) {
+    super(description, image, title, id)
+    this.infos = infos
+    this.rank = rank
   }
 }
 

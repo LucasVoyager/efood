@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Colors } from '../../styles/variables'
-import { ButtonContainer } from '../Button/styles'
+import { ButtonContainer } from '../../styles/index'
 import { TagContainer } from '../Tag/styles'
 
 export const CardContainer = styled.div`
@@ -31,10 +31,6 @@ export const TitleStar = styled.div`
   h2 {
     margin-right: 40px;
   }
-`
-
-export const Description = styled.p`
-  margin-bottom: 16px;
 `
 
 export const ContentCard = styled.div`

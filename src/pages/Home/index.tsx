@@ -2,10 +2,10 @@ import ListCard from '../../containers/CardList'
 
 import sushi from '../../assets/images/sushi.png'
 import pasta from '../../assets/images/pasta.png'
-import Food from '../../models/food'
+import { FoodHome } from '../../models/food'
 import Header from '../../components/Header'
 
-const foodsHome: Food[] = [
+const foodsHome: FoodHome[] = [
   {
     id: 1,
     title: 'Hioki Sushi',
