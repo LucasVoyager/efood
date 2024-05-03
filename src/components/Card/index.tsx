@@ -37,7 +37,7 @@ const Card = ({ description, image, rank, title, infos }: Props) => {
           </Rank>
         </TitleStar>
         <Description>{description}</Description>
-        <Button type="button" title="saiba mais">
+        <Button type="link" to="/perfil" title="saiba mais">
           saiba mais
         </Button>
       </ContentCard>

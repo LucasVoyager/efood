@@ -1,3 +1,11 @@
-const Perfil = () => <div>sou o perfil</div>
+import Hero from '../../components/Hero'
+
+const Perfil = () => {
+  return (
+    <>
+      <Hero />
+    </>
+  )
+}
 
 export default Perfil
