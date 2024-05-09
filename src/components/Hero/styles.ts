@@ -11,8 +11,8 @@ export const HeroHeader = styled.header`
 export const ContainerHeader = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 40px;
+  justify-content: space-between;
+  padding: 60px;
 
   a {
     color: ${Colors.primaryColor};
@@ -24,6 +24,7 @@ export const ContainerHeader = styled.div`
 export const CartLink = styled.a`
   display: flex;
   align-items: center;
+  font-size: 18px;
 
   img {
     margin-left: 4px;

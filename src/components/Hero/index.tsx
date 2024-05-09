@@ -10,7 +10,7 @@ const Hero = () => {
         <TitleHero to="/">Restaurantes</TitleHero>
         <img src={logo} alt="efood" />
         <CartLink href="#">
-          0-produtos(s)
+          0-produtos(s) no carrinho
           <img src={cart} alt="carrinho" />
         </CartLink>
       </ContainerHeader>

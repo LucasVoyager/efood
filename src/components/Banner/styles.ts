@@ -17,9 +17,11 @@ export const TextBanner = styled.h3`
   top: 80px;
   left: 180px;
   position: absolute;
+  opacity: 0.5;
 `
 export const ProductName = styled(TextBanner)`
   font-weight: bold;
   top: 280px;
   left: 180px;
+  opacity: 1;
 `

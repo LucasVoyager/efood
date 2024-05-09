@@ -1,5 +1,15 @@
-import { CardContainer, ContentCard, Infos, Rank, TitleStar } from './styles'
-import { ButtonLink, Description } from '../../styles'
+import {
+  ButtonMore,
+  CardContainer,
+  ContentCard,
+  DescrButton,
+  ImgCard,
+  Infos,
+  Rank,
+  TitleCard,
+  TitleStar
+} from './styles'
+import { Description } from '../../styles'
 
 import star from '../../assets/images/estrela.svg'
 import Tag from '../Tag'
@@ -20,17 +30,19 @@ const Card = ({ description, image, rank, title, infos }: Props) => {
           <Tag key={info}>{info}</Tag>
         ))}
       </Infos>
-      <img src={image} alt="" />
+      <ImgCard src={image} />
       <ContentCard>
         <TitleStar>
-          <h2>{title}</h2>
+          <TitleCard>{title}</TitleCard>
           <Rank>
             <span>{rank}</span>
             <img src={star} alt="estrela" />
           </Rank>
         </TitleStar>
-        <Description>{description}</Description>
-        <ButtonLink to="/perfil">saiba mais</ButtonLink>
+        <DescrButton>
+          <Description>{description}</Description>
+          <ButtonMore to="/perfil">saiba mais</ButtonMore>
+        </DescrButton>
       </ContentCard>
     </CardContainer>
   )

@@ -20,6 +20,7 @@ export const GlobalCss = createGlobalStyle`
 
 export const Description = styled.p`
   margin-bottom: 16px;
+  font-size: 14px;
 `
 export const ButtonContainer = styled.button`
   background-color: ${Colors.primaryColor};

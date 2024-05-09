@@ -2,11 +2,12 @@ import styled from 'styled-components'
 import { Colors } from '../../styles/variables'
 
 export const FooterContainer = styled.footer`
-  margin: 0 auto;
+  background-color: ${Colors.secondaryColor};
   display: flex;
   flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
   align-items: center;
-  background-color: ${Colors.secondaryColor};
 
   img {
     margin-top: 40px;
@@ -14,9 +15,9 @@ export const FooterContainer = styled.footer`
 `
 export const Links = styled.ul`
   display: flex;
-  gap: 8px;
+  gap: 4px;
   list-style: none;
-  margin-top: 32px;
+  margin-top: 24px;
   margin-bottom: 80px;
 `
 export const TextFooter = styled.p`
@@ -24,5 +25,6 @@ export const TextFooter = styled.p`
   line-height: 12px;
   color: ${Colors.primaryColor};
   margin-bottom: 40px;
-  width: 480px;
+  max-width: 480px;
+  text-align: center;
 `

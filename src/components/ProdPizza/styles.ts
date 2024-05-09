@@ -13,13 +13,16 @@ export const CardDF = styled.div`
     margin: 8px 0;
     color: ${Colors.secondaryColor};
   }
-  ${ButtonContainer} {
-    width: 100%;
-    background-color: ${Colors.secondaryColor};
-    color: ${Colors.primaryColor};
-  }
 `
 export const TitleCard = styled.h3`
   font-size: 16px;
   color: ${Colors.secondaryColor};
+`
+
+export const ButtonProd = styled(ButtonContainer)`
+  width: 100%;
+  background-color: ${Colors.secondaryColor};
+  color: ${Colors.primaryColor};
+  font-size: 14px;
+  padding: 4px 0;
 `

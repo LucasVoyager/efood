@@ -1,5 +1,5 @@
-import { ButtonContainer, Description } from '../../styles/index'
-import { CardDF, TitleCard } from './styles'
+import { Description } from '../../styles/index'
+import { ButtonProd, CardDF, TitleCard } from './styles'
 
 type Props = {
   image: string
@@ -13,7 +13,7 @@ const CardPizza = ({ description, image, title }: Props) => {
       <img src={image} alt="" />
       <TitleCard>{title}</TitleCard>
       <Description>{description}</Description>
-      <ButtonContainer>Adicionar ao carrinho</ButtonContainer>
+      <ButtonProd>Adicionar ao carrinho</ButtonProd>
     </CardDF>
   )
 }

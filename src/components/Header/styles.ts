@@ -7,20 +7,21 @@ export const HeaderContainer = styled.header`
   background-image: url(${vector});
   display: flex;
   flex-direction: column;
-  column-gap: 240px;
+  gap: 140px;
+  justify-content: space-between;
   align-items: center;
 
   img {
     margin-top: 64px;
-    margin-bottom: 140px;
   }
 `
 
 export const TitleHeader = styled.h2`
+  max-width: 540px;
   font-size: 36px;
   font-weight: bold;
   line-height: 40px;
   color: ${Colors.primaryColor};
   margin-bottom: 40px;
-  width: 539px;
+  text-align: center;
 `
