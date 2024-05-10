@@ -7,9 +7,13 @@ import { Colors } from '../../styles/variables'
 export const HeroContainer = styled.header`
   background-image: url(${vector});
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 60px;
   align-items: center;
+
+  img {
+    margin-left: 16px;
+  }
 `
 
 export const Cart = styled.a`
