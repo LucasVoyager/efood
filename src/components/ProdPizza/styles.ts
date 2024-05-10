@@ -13,6 +13,10 @@ export const CardDF = styled.div`
     margin: 8px 0;
     color: ${Colors.secondaryColor};
   }
+
+  img {
+    width: 100%;
+  }
 `
 export const TitleCard = styled.h3`
   font-size: 16px;
@@ -25,4 +29,5 @@ export const ButtonProd = styled(ButtonContainer)`
   color: ${Colors.primaryColor};
   font-size: 14px;
   padding: 4px 0;
+  border: none;
 `
