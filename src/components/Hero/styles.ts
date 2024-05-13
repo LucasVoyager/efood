@@ -6,13 +6,11 @@ import { Colors } from '../../styles/variables'
 
 export const HeroContainer = styled.header`
   background-image: url(${vector});
-  display: flex;
-  justify-content: space-around;
   padding: 60px;
-  align-items: center;
-
-  img {
-    margin-left: 16px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 `
 

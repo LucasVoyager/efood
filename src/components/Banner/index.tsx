@@ -5,8 +5,10 @@ import bannerimg from '../../assets/images/pasta.png'
 const Banner = () => {
   return (
     <Image style={{ backgroundImage: `url(${bannerimg})` }}>
-      <TextBanner>Italiana</TextBanner>
-      <ProductName>La Dolce Vita Trattoria</ProductName>
+      <div className="container">
+        <TextBanner>Italiana</TextBanner>
+        <ProductName>La Dolce Vita Trattoria</ProductName>
+      </div>
     </Image>
   )
 }

@@ -14,14 +14,12 @@ export const Image = styled.div`
 export const TextBanner = styled.h3`
   font-size: 32px;
   font-weight: 100;
-  top: 80px;
-  left: 180px;
   position: absolute;
+  padding-top: 25px;
   opacity: 0.5;
 `
 export const ProductName = styled(TextBanner)`
   font-weight: bold;
-  top: 280px;
-  left: 180px;
+  padding-top: 280.8px;
   opacity: 1;
 `
