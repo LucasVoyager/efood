@@ -3,7 +3,7 @@ import { Colors } from '../../styles/variables'
 
 export const Image = styled.div`
   width: 100%;
-  height: 400px;
+  height: 280px;
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,6 +20,6 @@ export const TextBanner = styled.h3`
 `
 export const ProductName = styled(TextBanner)`
   font-weight: bold;
-  padding-top: 280.8px;
+  padding-top: 214.8px;
   opacity: 1;
 `
