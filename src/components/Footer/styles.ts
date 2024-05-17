@@ -15,9 +15,9 @@ export const FooterContainer = styled.footer`
 `
 export const Links = styled.ul`
   display: flex;
-  gap: 4px;
+  gap: 8px;
   list-style: none;
-  margin-top: 24px;
+  margin-top: 32.5px;
   margin-bottom: 80px;
 `
 export const TextFooter = styled.p`
@@ -27,4 +27,5 @@ export const TextFooter = styled.p`
   margin-bottom: 40px;
   max-width: 480px;
   text-align: center;
+  margin-bottom: 40px;
 `
