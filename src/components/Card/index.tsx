@@ -14,7 +14,7 @@ import { Description } from '../../styles'
 import star from '../../assets/images/estrela.svg'
 import Tag from '../Tag'
 
-export type Props = {
+type Props = {
   image: string
   title: string
   rank: number

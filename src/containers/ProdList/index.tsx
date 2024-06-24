@@ -1,5 +1,7 @@
 import CardPizza from '../../components/ProdPizza'
-import Food from '../../models/food'
+
+import { Food } from '../../pages/Home'
+
 import { ListCardPizzaCont } from './styles'
 
 type Props = {
@@ -12,7 +14,7 @@ const ListPizza = ({ pizzas }: Props) => {
       {pizzas.map((pizza) => (
         <CardPizza
           description={pizza.description}
-          image={pizza.image}
+          image={pizza.media}
           title={pizza.title}
           key={pizza.id}
         />
