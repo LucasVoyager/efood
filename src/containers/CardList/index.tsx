@@ -34,7 +34,6 @@ const ListCard = ({ foods }: Props) => {
               description={food.descricao}
               image={food.capa}
               title={food.titulo}
-              id={food.id}
             />
           </li>
         ))}

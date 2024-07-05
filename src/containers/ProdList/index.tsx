@@ -5,22 +5,22 @@ import { Food } from '../../pages/Home'
 import { ListCardPizzaCont } from './styles'
 
 type Props = {
-  food: Food
+  food: Food[]
 }
 
-const ListPizza = ({ food }: Props) => {
-  return (
-    <ListCardPizzaCont>
-      (
-      <CardPizza
-        description={food.cardapio.descricao}
-        image={food.cardapio.foto}
-        title={food.cardapio.nome}
-        key={food.id}
-      />
-      )
-    </ListCardPizzaCont>
-  )
+const ProdList = ({ food }: Props) => {
+  return food.map((f) => (
+    <>
+      <ListCardPizzaCont>
+        <CardPizza
+          description={f.cardapio.descricao}
+          image={f.cardapio.foto}
+          title={f.cardapio.nome}
+          key={f.cardapio.id}
+        />
+      </ListCardPizzaCont>
+    </>
+  ))
 }
 
-export default ListPizza
+export default ProdList

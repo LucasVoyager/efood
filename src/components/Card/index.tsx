@@ -20,10 +20,9 @@ type Props = {
   rank: number
   description: string
   infos: string[]
-  id: number
 }
 
-const Card = ({ description, image, rank, title, infos, id }: Props) => {
+const Card = ({ description, image, rank, title, infos }: Props) => {
   return (
     <CardContainer>
       <Infos>
@@ -42,7 +41,7 @@ const Card = ({ description, image, rank, title, infos, id }: Props) => {
         </TitleStar>
         <DescrButton>
           <Description>{description}</Description>
-          <ButtonMore to={`/perfil/${id}`}>saiba mais</ButtonMore>
+          <ButtonMore to={`/perfil`}>saiba mais</ButtonMore>
         </DescrButton>
       </ContentCard>
     </CardContainer>
