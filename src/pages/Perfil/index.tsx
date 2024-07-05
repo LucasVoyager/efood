@@ -1,21 +1,34 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import Hero from '../../components/Hero'
 
 import ListPizza from '../../containers/ProdList'
 
-import pizza from '../../assets/images/pizza.png'
 import Banner from '../../components/Banner'
 import { Food } from '../Home'
+import { useParams } from 'react-router-dom'
 
 const Perfil = () => {
-  const [pizza, setPizza] = useState<Food[]>()
+  const { id } = useParams()
+
+  const [food, setFood] = useState<Food>()
+
+  useEffect(() => {
+    fetch(`https://fake-api-tau.vercel.app/api/efood/restaurantes/${id}`).then(
+      (res) => res.json().then((res) => setFood(res))
+    )
+  }, [id])
+
+  if (!food) {
+    return <h3>...Carregando</h3>
+  }
+
   return (
     <>
       <Hero />
-      <Banner />
+      <Banner food={food} />
       <div className="container">
-        {/* <ListPizza pizzas={pizzaPerfil} /> */}
+        <ListPizza food={food} />
       </div>
     </>
   )

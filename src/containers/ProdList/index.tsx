@@ -1,24 +1,24 @@
-import CardPizza from '../../components/ProdPizza'
+import CardPizza from '../../components/Product'
 
 import { Food } from '../../pages/Home'
 
 import { ListCardPizzaCont } from './styles'
 
 type Props = {
-  pizzas: Food[]
+  food: Food
 }
 
-const ListPizza = ({ pizzas }: Props) => {
+const ListPizza = ({ food }: Props) => {
   return (
     <ListCardPizzaCont>
-      {pizzas.map((pizza) => (
-        <CardPizza
-          description={pizza.description}
-          image={pizza.media}
-          title={pizza.title}
-          key={pizza.id}
-        />
-      ))}
+      (
+      <CardPizza
+        description={food.cardapio.descricao}
+        image={food.cardapio.foto}
+        title={food.cardapio.nome}
+        key={food.id}
+      />
+      )
     </ListCardPizzaCont>
   )
 }
