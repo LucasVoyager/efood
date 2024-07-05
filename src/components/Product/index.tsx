@@ -7,7 +7,7 @@ type Props = {
   description: string
 }
 
-const CardPizza = ({ description, image, title }: Props) => {
+const CardProduct = ({ description, image, title }: Props) => {
   return (
     <CardDF>
       <img src={image} alt="" />
@@ -18,4 +18,4 @@ const CardPizza = ({ description, image, title }: Props) => {
   )
 }
 
-export default CardPizza
+export default CardProduct
